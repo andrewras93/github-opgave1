@@ -34,3 +34,30 @@ img {
     max-width: 100%; /* Bredde må maks fylde 100% */
     height: auto; /* Højden skal tilpasse sig */
 }
+
+div{
+    width: 400px;
+    height: 400px;
+    max-width: 50%;
+    background: linear-gradient(to right, cadetblue, cornflowerblue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 139, 0.3);
+}
+
+div::before{
+    content: "squeeze me";
+    color: #f1f1f1;
+    font-family: Calibri;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 100;
+}
